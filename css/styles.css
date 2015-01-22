@@ -1,0 +1,32 @@
+html, body {
+	font-family: sans-serif;
+}
+core-header-panel {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+}
+	core-header-panel > .core-header {
+		height: 60px;
+		line-height: 60px;
+		font-size: 18px;
+		padding: 0 10px;
+		background-color: #4F7DC9;
+		color: #FFF;
+		transition: height 0.2s;
+	}
+		core-header-panel > .core-header > paper-menu-button {
+			float: right;
+		}
+			core-header-panel > .core-header > paper-menu-button > paper-icon-button {
+				padding: 16px;
+			}
+			core-header-panel > .core-header > paper-menu-button > paper-dropdown a {
+				text-decoration: none;
+				color: #000;
+			}
+	core-header-panel > .content {
+		width: 100%;
+		min-height: 100vh;
+		background: linear-gradient(rgb(214, 227, 231), lightblue);
+	}
