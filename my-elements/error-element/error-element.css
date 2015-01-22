@@ -1,0 +1,14 @@
+:host {
+	text-align: center;
+}
+h1 {
+	color: gray;
+	font-size: 80px;
+}
+::content h2 {
+	color: gray;
+	font-size: 30px; 
+}
+::content p {
+	color: gray;
+}

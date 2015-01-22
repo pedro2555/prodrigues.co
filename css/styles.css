@@ -28,5 +28,7 @@ core-header-panel {
 	core-header-panel > .content {
 		width: 100%;
 		min-height: 100vh;
+		margin: 0 auto;
+		padding: 15px 0px;
 		background: linear-gradient(rgb(214, 227, 231), lightblue);
 	}

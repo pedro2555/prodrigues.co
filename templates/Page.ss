@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>$SiteConfig.Title</title>
+	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<% base_tag %>
 
 	<% require javascript('%ThemeDir/polymer/webcomponentsjs/webcomponents.js') %>
+
 	<% require themedCSS('styles') %>
 
 	<link rel="import" href="$ThemeDir/polymer/core-header-panel/core-header-panel.html">
@@ -16,11 +17,14 @@
 	<link rel="import" href="$ThemeDir/polymer/paper-dropdown/paper-dropdown.html">
 	<link rel="import" href="$ThemeDir/polymer/core-menu/core-menu.html">
 	<link rel="import" href="$ThemeDir/polymer/paper-item/paper-item.html">
+
+
+	<link rel="import" href="$ThemeDir/my-elements/error-element/error-element.html">
 	
 </head>
 <body fullbleed layout vertical>
 	<core-header-panel>
-		<div class="core-header">
+		<div class="core-header">			
 			<span>$SiteConfig.Title</span>
 			<paper-menu-button>
 				<paper-icon-button icon="menu" noink></paper-icon-button>
@@ -34,7 +38,7 @@
 			</paper-menu-button>
 		</div>
 		<div class="content">
-			
+			$Layout
 		</div>
 	</core-header-panel>
 </body>
