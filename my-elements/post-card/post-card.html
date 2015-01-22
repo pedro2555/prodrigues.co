@@ -1,11 +1,14 @@
 <link rel="import" href="$ThemeDir/polymer/polymer/polymer.html">
+<link rel="import" href="$ThemeDir/polymer/paper-ripple/paper-ripple.html">
 
 <polymer-element name="post-card" noscript>
 	<template>
 		<link rel="stylesheet" href="post-card.css">
 
-		<content select="img"></content>
-		<content select="h1"></content>
-		<content select="p"></content>
+		<paper-ripple class="recenteringTouch">
+			<content select="img"></content>
+			<content select="h1"></content>
+			<content select="p"></content>
+		</paper-ripple>
 	</template>
 </polymer-element>

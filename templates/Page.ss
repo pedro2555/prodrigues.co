@@ -38,7 +38,7 @@
 				</paper-dropdown>
 			</paper-menu-button>
 		</div>
-		<div class="content" layout>
+		<div class="content">
 			$Layout
 		</div>
 	</core-header-panel>

@@ -28,6 +28,21 @@ core-header-panel {
 	core-header-panel > .content {
 		min-height: 100vh;
 		margin: 0 auto;
-		padding: 15px 15px;
 		background: linear-gradient(rgb(214, 227, 231), lightblue);
 	}
+		core-header-panel > .content > #container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		@media all and (max-width: 770px) {
+			core-header-panel > .content > #container {
+				padding: 3px;
+			}
+		}
+		@media all and (min-width: 771px) {
+			core-header-panel > .content > #container {
+				padding: 15px;
+			}
+		}
+		
