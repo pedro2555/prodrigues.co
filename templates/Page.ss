@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+	<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -20,12 +20,13 @@
 
 
 	<link rel="import" href="$ThemeDir/my-elements/error-element/error-element.html">
+	<link rel="import" href="$ThemeDir/my-elements/post-card/post-card.html">
 	
 </head>
 <body fullbleed layout vertical>
 	<core-header-panel>
 		<div class="core-header">			
-			<span>$SiteConfig.Title</span>
+			<span><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> - $SiteConfig.Title</span>
 			<paper-menu-button>
 				<paper-icon-button icon="menu" noink></paper-icon-button>
 				<paper-dropdown class="dropdown" halign="right">
@@ -37,7 +38,7 @@
 				</paper-dropdown>
 			</paper-menu-button>
 		</div>
-		<div class="content">
+		<div class="content" layout>
 			$Layout
 		</div>
 	</core-header-panel>
