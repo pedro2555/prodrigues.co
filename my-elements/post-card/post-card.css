@@ -1,6 +1,12 @@
 :host {
-	width: 300px;
+	position: relative;
+	display: inline-block;
+	width: 330px;
 	height: 240px;
+	padding: 5px 10px;
+	vertical-align: top;
+	background-color: #fff;
+	box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
 ::content h1 {
 	color: gray;
